@@ -1,0 +1,83 @@
+mat-toolbar
+{
+  height:100px;
+}
+
+.firts-row
+{
+  height: 40px;
+}
+.spacer {
+  flex: 1 1 auto;
+}
+  
+.form-group
+{
+  padding-left: 20px;
+  height: 30px;
+  display: flex;
+}
+.search-bar
+{
+  margin-left: 20px;
+  width: 400px;
+}
+
+
+nav .toolbar
+{
+  list-style: none;
+  display: flex;
+ 
+}
+
+nav .toolbar > li {
+  position: relative; 
+}
+
+nav .toolbar li a
+{
+  color: inherit;
+  padding-left: 15px;
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+}
+nav .dropDown li a {
+  color: #4a90e2;
+  padding: 0px ;
+}
+nav .dropDown
+{
+  display: none;
+ 
+  position: absolute; 
+  top: 100%;
+  right: 0;
+  padding: 0px;
+  background-color: #f3e5ab; 
+  list-style: none;
+  border-radius: 4px; 
+}
+
+nav .toolbar > li:hover .dropDown {
+  display: block; /* Afișează lista */
+}
+
+nav .dropDown li a:hover {
+  background-color: #8b5e3a; /* Fundal maro */
+  color: white;
+  
+}
+
+
+.logo
+{
+    cursor: pointer;
+}
+
+.btn
+{
+    display: none;
+    
+}

@@ -1,0 +1,14 @@
+.task-columns {
+    margin-top: 250px;
+    margin-left: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px; /* Spațiu între coloane și rânduri */
+  }
+  
+  .task-column {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+  }
+

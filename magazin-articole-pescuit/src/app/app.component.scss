@@ -44,7 +44,7 @@ nav .toolbar li a
   align-items: center;
 }
 nav .dropDown li a {
-  color: #4a90e2;
+  color:inherit;
   padding: 0px ;
 }
 nav .dropDown
@@ -65,8 +65,7 @@ nav .toolbar > li:hover .dropDown {
 }
 
 nav .dropDown li a:hover {
-  background-color: #8b5e3a; /* Fundal maro */
-  color: white;
+  color: blue;
   
 }
 

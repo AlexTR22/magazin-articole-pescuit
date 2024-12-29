@@ -1,12 +1,12 @@
 <mat-card appearance="outlined" (click)="viewProductDetails(product.id)">
     <mat-card-header>
       <mat-card-title-group>
-        <mat-card-title> {{product?.name}} </mat-card-title>
-        <mat-card-subtitle> id: {{product?.id}} </mat-card-subtitle>
+        <mat-card-title> {{product.name}} </mat-card-title>
+        <mat-card-subtitle> id: {{product.id}} </mat-card-subtitle>
       </mat-card-title-group>
     </mat-card-header>
     <mat-card-content>
-      {{product?.description | slice:0:50}} ...more
+      {{product.description | slice:0:50}} ...more
     </mat-card-content>
 </mat-card>
 

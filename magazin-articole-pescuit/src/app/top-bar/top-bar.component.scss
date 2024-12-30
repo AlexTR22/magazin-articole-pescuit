@@ -36,6 +36,8 @@ nav .toolbar > li {
   position: relative; 
 }
 
+
+//o sa sterg (nav .toolbar li a) pentru ca toate <a> o sa fie inlocuite de labe-uri sa pot sa dau click pe ele
 nav .toolbar li a
 {
   color: inherit;
@@ -44,10 +46,20 @@ nav .toolbar li a
   text-decoration: none;
   align-items: center;
 }
+nav .toolbar li .account
+{
+  color: inherit;
+  padding-left: 15px;
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+}
+
 nav .dropDown li a {
   color:inherit;
   padding: 0px ;
 }
+
 nav .dropDown
 {
   display: none;
@@ -73,6 +85,7 @@ nav .dropDown li a:hover {
 {
     cursor: pointer;
     user-select: none;
+
 }
 
 .logo

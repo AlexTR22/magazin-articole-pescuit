@@ -1,0 +1,60 @@
+<mat-toolbar class="top-bar">
+    <mat-toolbar-row class="first-row">
+        <form>
+            <div class="form-group">
+                <label class="logo" for="goHomePage">Task Name
+                    <button id="goHomePage" class="btn" (click)="OnGoHomePage()"></button>
+                </label>
+
+                <input type="text" [(ngModel)]="productName" class="search-bar" required/>
+                <button type="submit" > <mat-icon>search</mat-icon> </button>
+            </div>  
+        </form>
+        <span class="spacer"></span>
+        <nav>
+            <ul class="toolbar">
+                <li>
+                    <label class="account" for="goLogin">Cont<mat-icon >account_circle</mat-icon>
+                        <button id="goLogin" class="btn" (click)="OnGoLogin()"></button>
+                    </label>
+                    <!--<a href="#">Cont</a> -->
+                    <ul class="dropDown">
+                        <li> <label class="account" for="goLogin">Autentificate
+                            <button id="goLogin" class="btn" (click)="OnGoLogin()"></button>
+                        </label> </li>
+                        <li> <label class="account" for="goSignup">Creeaza cont
+                            <button id="goSignup" class="btn" (click)="OngoSignup()"></button>
+                        </label> </li>
+                    </ul>
+                </li>
+                <li > 
+                    <a href="#">Favorite <mat-icon>favorite</mat-icon></a>
+                    <ul class="dropDown">
+                        <li> Creeaza cont</li>
+                        <li> Autentificate</li>
+                    </ul>
+                    
+                </li>
+                <li > 
+                    <a href="#">Cos Cumparaturi<mat-icon>shopping_cart</mat-icon></a>
+                    <ul class="dropDown">
+                        <li> Creeaza cont</li>
+                        <li> Autentificate</li>
+                    </ul>
+                    
+                    
+                </li>
+            </ul>
+        </nav>
+        
+        
+        
+    </mat-toolbar-row>
+    <mat-toolbar-row class="second-row">
+      <span>Third Line</span>
+      
+     
+      
+    </mat-toolbar-row>
+  </mat-toolbar>
+

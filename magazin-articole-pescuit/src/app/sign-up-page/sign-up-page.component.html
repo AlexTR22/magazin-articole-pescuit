@@ -1,1 +1,21 @@
-<p>sign-up-page works!</p>
+<mat-card>
+  <mat-card-header>
+    <mat-card-title> SIGN UP </mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    
+      <div class="form-group">
+          <label>Username: </label>
+          <input type="text" [(ngModel)]="username" class="search-bar" required/>
+          <br>
+          <label>Email: </label>
+          <input type="text" [(ngModel)]="email" class="search-bar" required/>
+          <br>
+          <label>Password: </label>
+          <input type="text" [(ngModel)]="password" class="search-bar" required/>
+          <br>
+          <button class="btn" (click)="onSignUp()">  Login </button>
+      </div>  
+  
+  </mat-card-content>
+</mat-card> 

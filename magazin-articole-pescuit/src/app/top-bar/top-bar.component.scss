@@ -51,7 +51,6 @@ nav .dropDown li a {
 nav .dropDown
 {
   display: none;
- 
   position: absolute; 
   top: 100%;
   right: 0;
@@ -70,7 +69,7 @@ nav .dropDown li a:hover {
   
 }
 
-nav .dropDown .account
+.account
 {
     cursor: pointer;
     user-select: none;

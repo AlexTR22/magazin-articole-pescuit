@@ -6,7 +6,7 @@
                     <button id="goHomePage" class="btn" (click)="OnGoHomePage()"></button>
                 </label>
 
-                <input type="text" [(ngModel)]="productName" class="search-bar" required/>
+                <input type="text" [(ngModel)]="productName" [ngModelOptions]="{standalone: true}" class="search-bar" required/>
                 <button type="submit" > <mat-icon>search</mat-icon> </button>
             </div>  
         </form>

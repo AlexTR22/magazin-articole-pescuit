@@ -4,6 +4,7 @@ import { Component } from '@angular/core';
 //import { MatToolbarModule} from '@angular/material/toolbar';
 import { Router, RouterOutlet} from '@angular/router';
 import { TopBarComponent } from "./top-bar/top-bar.component";
+import { ProductService } from './services/product.service';
 
 @Component({
   selector: 'app-root',
@@ -14,6 +15,10 @@ import { TopBarComponent } from "./top-bar/top-bar.component";
 export class AppComponent {
   title = 'magazin-articole-pescuit';
  
-  constructor(private router: Router){}
-  
+  constructor(private router: Router,){}
+  ngOnInit():void
+  {
+    
+  }
+
 }

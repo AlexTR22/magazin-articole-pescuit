@@ -1,8 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { NgFor } from '@angular/common';
 import { ProductsCardComponent } from '../products-card/products-card.component';
 import { ProductService } from '../services/product.service';
-import { Observable } from 'rxjs';
+import { Product } from '../product';
+
 @Component({
   selector: 'app-products-grid',
   imports: [NgFor,ProductsCardComponent],
@@ -11,10 +12,11 @@ import { Observable } from 'rxjs';
 })
 export class ProductsGridComponent {
   constructor(public service: ProductService){} 
+  @Input() products: Product[];
 
   ngOnInit(): void
   {
-    this.service.getProducts();
+    
   }
 }
 

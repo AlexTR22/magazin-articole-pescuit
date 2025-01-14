@@ -17,7 +17,6 @@
                     <label class="account" for="goLogin">Cont <mat-icon >account_circle</mat-icon>
                         <button id="goLogin" class="btn" (click)="OnGoLogin()"></button>
                     </label>
-                    <!--<a href="#">Cont</a> -->
                     <ul class="dropDown">
                         <li> <label class="account" for="goLogin">Autentificate
                             <button id="goLogin" class="btn" (click)="OnGoLogin()"></button>
@@ -46,13 +45,45 @@
                 </li>
             </ul>
         </nav>
-        
-        
-        
     </mat-toolbar-row>
+
+
+
     <mat-toolbar-row class="second-row">
-      <span>Third Line</span>
-      
+        <ul class="sec-bar">
+            <li class="prod-btn" [ngClass]="{ '.show': isHomePage }" (mouseenter)="showDropdown()" (mouseleave)="hideDropdown()">
+                <label class="sec-row-btn" for=""> Produse
+                    <button  id="" class="btn" ></button>
+                </label>
+                <ul class="dropDown-prod">
+                    <li> <label class="account" for="selectCategory">Lansete
+                        <button id="selectCategory" class="btn" (click)="selectCategory('lansete')"></button>
+                    </label> </li>
+                    <li> <label class="account" for="selectCategory1">Mulinete
+                        <button id="selectCategory1" class="btn" (click)="selectCategory('mulinete')"></button>
+                    </label> </li>
+                    <li> <label class="account" for="selectCategory2">Nada
+                        <button id="selectCategory2" class="btn" (click)="selectCategory('nada')"></button>
+                    </label> </li>
+                </ul>
+
+            </li>
+            <li>
+                <label class="sec-row-btn" for="goLogin"> Promotii
+                    <button  id="goLogin" class="btn" (click)="OnGoLogin()"></button>
+                </label>
+            </li>
+            <li>
+                <label class="sec-row-btn" for="goLogin"> Noutati
+                    <button  id="goLogin" class="btn" (click)="OnGoLogin()"></button>
+                </label>
+            </li>
+            <li>
+                <label class="sec-row-btn" for="goLogin"> Contact
+                    <button  id="goLogin" class="btn" (click)="OnGoLogin()"></button>
+                </label>
+            </li>
+        </ul>
      
       
     </mat-toolbar-row>

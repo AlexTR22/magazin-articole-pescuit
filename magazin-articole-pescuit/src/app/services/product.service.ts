@@ -26,4 +26,12 @@ export class ProductService {
       error: err=>{console.log('Err from API:',err);}
     });
   }
+  getProductsByCategory(category:string) 
+  {
+    const url = `${this.apiUrl}/category/${category}`;
+    this.http.get(url).subscribe({
+      next: res=>{this.products=res as Product[];},
+      error: err=>{console.log('Err from API:',err);}
+    });
+  }
 } 

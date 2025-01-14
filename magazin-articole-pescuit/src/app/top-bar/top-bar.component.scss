@@ -4,6 +4,7 @@
   height:100px;
 }
 
+
 .firts-row
 {
   height: 40px;
@@ -49,7 +50,7 @@ nav .toolbar li a
 nav .toolbar li .account
 {
   color: inherit;
-  padding-left: 15px;
+  padding-left: 0px;
   display: flex;
   text-decoration: none;
   align-items: center;
@@ -97,6 +98,79 @@ nav .dropDown li a:hover {
 .btn
 {
     display: none;
-    
 }
 
+.second-row {
+  height: 30px;
+  margin-top: 0%;
+}
+
+.second-row .sec-bar {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.second-row ul li {
+  height: 42px;
+  width: 200px;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  background-color: #4A90E2;
+  position: relative; 
+}
+
+.second-row ul li label {
+  color: inherit;
+  align-items: center;
+  cursor: pointer; /* Indicativ pentru hover */
+}
+
+/* Stiluri pentru dropdown */
+.prod-btn {
+  background-color: #F3E5AB !important;
+}
+
+.dropDown-prod {
+  display: none;
+  position: absolute; 
+  top: 100%; 
+  left: 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 0; /* Elimină spațiul dintre elemente */
+  width: 100px;
+  
+}
+
+.dropDown-prod li {
+  height: auto;
+  width: 100%; 
+  text-align: center; 
+  background-color: #fff;
+}
+
+.sec-bar .dropDown-prod li:hover {
+  background-color: #F3E5AB; /* Fundal la hover */
+}
+
+.dropDown-prod li label {
+  width: 100%; 
+  display: block !important;
+  cursor: pointer;
+}
+
+.sec-bar>.prod-btn:hover .dropDown-prod {
+  display: block;
+}
+
+
+.sec-bar .dropDown-prod .show {
+  display: block; /* Afișat dacă este pe pagina de Acasă */
+}
+
+.second-row .sec-bar li:hover {
+  background-color: #FFD700; 
+}

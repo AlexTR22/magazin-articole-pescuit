@@ -14,7 +14,6 @@ import { ProductService } from './services/product.service';
 })
 export class AppComponent {
   title = 'magazin-articole-pescuit';
- 
   constructor(private router: Router,){}
   ngOnInit():void
   {

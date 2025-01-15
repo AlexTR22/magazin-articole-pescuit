@@ -54,8 +54,24 @@ export class TopBarComponent {
   {
     this.route.navigate(['/signup']);
   }
+  OnGoNewItems()
+  {
+    this.route.navigate(['/newitems']);
+  }
+  OnGoInformations()
+  {
+    this.route.navigate(['/informations']);
+  }
   selectCategory(category: string)
   {
     this.route.navigate([category === null ? '/home' : '/category', category]);
+  }
+  OnGoFavorites()
+  {
+    this.route.navigate(['/favorite']);
+  }
+  OnGoShoppingCart()
+  {
+    this.route.navigate(['/shoppingcart']);
   }
 }

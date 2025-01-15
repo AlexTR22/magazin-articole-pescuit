@@ -27,7 +27,9 @@
                     </ul>
                 </li>
                 <li > 
-                    <a href="#">Favorite <mat-icon>favorite</mat-icon></a>
+                    <label class="account" for="goFavorite">Favourite <mat-icon>favorite</mat-icon>
+                        <button id="goFavorite" class="btn" (click)="OnGoFavorites()"></button>
+                    </label>
                     <ul class="dropDown">
                         <li> Creeaza cont</li>
                         <li> Autentificate</li>
@@ -35,7 +37,9 @@
                     
                 </li>
                 <li > 
-                    <a href="#">Cos Cumparaturi<mat-icon>shopping_cart</mat-icon></a>
+                    <label class="account" for="goShoppingCart"> Cos Cumparaturi <mat-icon>shopping_cart</mat-icon>
+                        <button id="goShoppingCart" class="btn" (click)="OnGoShoppingCart()"></button>
+                    </label>
                     <ul class="dropDown">
                         <li> Creeaza cont</li>
                         <li> Autentificate</li>
@@ -69,18 +73,18 @@
 
             </li>
             <li>
-                <label class="sec-row-btn" for="goLogin"> Promotii
-                    <button  id="goLogin" class="btn" (click)="OnGoLogin()"></button>
+                <label class="sec-row-btn" for="goPromotions"> Promotii
+                    <button  id="goPromotions" class="btn" (click)="OnGoHomePage()"></button>
                 </label>
             </li>
             <li>
-                <label class="sec-row-btn" for="goLogin"> Noutati
-                    <button  id="goLogin" class="btn" (click)="OnGoLogin()"></button>
+                <label class="sec-row-btn" for="goNewItems"> Noutati
+                    <button  id="goNewItems" class="btn" (click)="OnGoNewItems()"></button>
                 </label>
             </li>
             <li>
-                <label class="sec-row-btn" for="goLogin"> Contact
-                    <button  id="goLogin" class="btn" (click)="OnGoLogin()"></button>
+                <label class="sec-row-btn" for="goInformations"> Contact
+                    <button  id="goInformations" class="btn" (click)="OnGoInformations()"></button>
                 </label>
             </li>
         </ul>

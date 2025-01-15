@@ -105,6 +105,7 @@ nav .dropDown li a:hover {
   margin-top: 0%;
 }
 
+
 .second-row .sec-bar {
   list-style: none;
   display: flex;
@@ -125,10 +126,14 @@ nav .dropDown li a:hover {
 .second-row ul li label {
   color: inherit;
   align-items: center;
-  cursor: pointer; /* Indicativ pentru hover */
+  user-select: none;
+  justify-content: center;
+  display: flex;
+  cursor: pointer;
+  width: 100%;
 }
 
-/* Stiluri pentru dropdown */
+
 .prod-btn {
   background-color: #F3E5AB !important;
 }
@@ -140,7 +145,7 @@ nav .dropDown li a:hover {
   left: 0;
   border: 1px solid #ccc;
   border-radius: 5px;
-  padding: 0; /* Elimină spațiul dintre elemente */
+  padding: 0; 
   width: 100px;
   
 }
@@ -153,7 +158,7 @@ nav .dropDown li a:hover {
 }
 
 .sec-bar .dropDown-prod li:hover {
-  background-color: #F3E5AB; /* Fundal la hover */
+  background-color: #F3E5AB; 
 }
 
 .dropDown-prod li label {
@@ -168,7 +173,7 @@ nav .dropDown li a:hover {
 
 
 .sec-bar .dropDown-prod .show {
-  display: block; /* Afișat dacă este pe pagina de Acasă */
+  display: block; 
 }
 
 .second-row .sec-bar li:hover {
